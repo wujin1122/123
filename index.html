@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>主頁</title>
+<meta charset="utf-8">
+<link href="css/site.css" rel="stylesheet" type="text/css">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<link href="css/fig.css" rel="stylesheet" type="text/css">
+<link href="css/btn1.css" rel="stylesheet" type="text/css">
+<style>
+    main{
+        background-color: #EDE7F6;
+    }
+    .ggg{
+        margin:auto;
+        background-color: #E8EAF6;
+        text-align: center;
+    }
+    .slider_container {
+  margin: 30px;
+  width: 400px;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  border: 10px solid;
+  border-top-color: #69F0AE;
+  border-left-color: #FF6E40;
+  border-bottom-color: #FFFF00;
+  border-right-color: #40C4FF;
+  background-color: #f5f5f5;
+  box-shadow: 15px 15px 10px; 
+}
+.slider_container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  width: 100%;
+  height: 100%;
+  background-image: url(img/2222.jpg);
+  animation: bk 12s linear;
+}
+.slider_container div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  left: 100%;
+  width: 100%;
+  -webkit-animation: round 12s linear infinite;
+  animation: round 12s linear infinite;
+}
+.slider_container div img {
+  width: 100%;
+}
+@-webkit-keyframes round {
+  4% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 0;
+  }
+  16% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 0;
+  }
+  20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: -100%;
+  }
+  22% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: -100%;
+  } 
+  24% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: 100%;
+  } 
+}
+@keyframes bk {
+  0% {
+    left: 0;
+  }
+  4% {
+    left: -100%;
+  }   
+}
+
+@keyframes bk {
+  0% {
+    left: 0;
+  }
+  4% {
+    left: -100%;
+  }  
+}
+.slider_container div:nth-child(5) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.slider_container div:nth-child(4) {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.slider_container div:nth-child(3) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.slider_container div:nth-child(2) {
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+.slider_container div:nth-child(1) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.rwd_slider_container_wrapper {
+  margin: 30px auto !important;
+  width: 420px;
+}
+.rwd_slider_container {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 70%;
+  box-sizing: border-box;
+}
+.rwd_slider_container .slider_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div id="all">
+    <header id="header">
+        <div class="logo"><img src="img/123.jpg"></div>
+    </header>
+    <div id="menu-wrapper">
+        <ul class="menu">
+            <li><a href="index.html">Ⓗⓞⓜⓔ</a>
+                   </li>
+            <li><a href="tn.html">品種介紹</a>
+                <ul>
+                    <li><a href="tn-1.html">無毛貓</a></li>
+                    <li><a href="tn2.html">長毛貓☞</a>
+                     <ul>
+                            <li><a href="tn12.html">山東獅子貓</a></li>
+                            <li><a href="#">布偶貓</a></li>
+                            <li><a href="#">波斯貓</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tn3.html">短毛貓☞</a>
+                        <ul>
+                            <li><a href="#">俄羅斯藍貓</a></li>
+                            <li><a href="#">美國短尾貓</a></li>
+                            <li><a href="#">蘇格蘭摺耳貓</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <li><a href="ph.html">關於我們</a>
+                <ul>
+                    <li><a href="#">理念</a></li>
+                    <li><a href="#">活動籌劃</a></li>
+                    <li><a href="#">地點</a></li>
+                </ul>
+            </li>
+            <li><a href="#">周邊商品</a>
+                <ul>
+                    <li><a href="#">填充玩具</a></li>
+                    <li><a href="#">馬克杯</a></li>
+                    <li><a href="#">鑰匙圈</a></li>
+                </ul>
+            </li>
+         </ul>
+    </div>
+    <div id="wrapper">
+        <aside id="aside">
+            <button class="btn1">最新消息</button>
+            <button class="btn1">檔案下載</button>
+            <button class="btn1">留言板</button>
+            <button class="btn1">活動相簿</button>
+        </aside>
+        <main>
+            <div id="fig-wrapper">
+                <div class="sec">
+                <p class="title">✐ＨＯＭＥ</p>
+                <div class="slider_container">
+	               <div>
+		              <img src="img/1111.jpg" alt="pure css3 slider" />
+	               </div>
+	               <div>
+                      <img src="img/2222.jpg" alt="pure css3 slider" />
+	               </div>
+	               <div>
+		              <img src="img/3333.jpg" alt="pure css3 slider" />
+	               </div>
+	               <div>
+		              <img src="img/4444.jpg" alt="pure css3 slider" />
+	               </div>
+	               <div>
+		              <img src="img/5555.jpg" alt="pure css3 slider" />
+	               </div>
+                </div><br>
+                <div>
+                <h3>➸領養資訊</h3>
+                    <li><a href="http://www.meetpets.org.tw/pets/cat"style="color:#FF4081">社團法人台灣認養地圖協會</a></li>
+                    <li><a href="https://asms.coa.gov.tw/Amlapp/App/AnnounceMent.aspx?PageType=Adopt"style="color:#FF4081">全國推廣動物認領平台</a></li>
+                    <li><a href="https://www.facebook.com/groups/1612153615732604/" style="color:#FF4081">FB愛貓領養</a></li>
+                </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="ggg">
+     <button type="button" onclick="document.getElementById('js1').innerHTML =Date()">Time</button>
+        <p id="js1">按按鈕顯示時間✌</p>
+    </div>
+    <footer id="footer">Phone number☎:0912345678</footer>
+    
+</div>
+</body>
+</html>
